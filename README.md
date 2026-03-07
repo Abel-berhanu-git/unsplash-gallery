@@ -12,7 +12,7 @@ A **React + Vite** project to search and display images from the **Unsplash API*
 
 ---
 
-**🔗 [Live Demo](https://your-live-link-here.com)**
+**🔗 [Live Demo](https://unsplash-galleries.netlify.app)**
 
 
 ## 🚀 Getting Started

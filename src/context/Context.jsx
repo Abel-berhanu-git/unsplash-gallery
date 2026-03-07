@@ -14,7 +14,7 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
-  const [searchValue, setSearchValue] = useState('cat');
+  const [searchValue, setSearchValue] = useState('ethiopia');
 
   // console.log(getInitialDarkMode());
   const toggleDarkTheme = () => {

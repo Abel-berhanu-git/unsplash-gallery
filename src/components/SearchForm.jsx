@@ -18,7 +18,7 @@ const SearchForm = () => {
           className='form-input search-input'
           type='text'
           name='search'
-          placeholder='cat'
+          placeholder='ethiopia'
         />
         <button type='submit' className='btn'>
           search
