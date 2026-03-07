@@ -1,0 +1,29 @@
+info:
+  name: search photo
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://api.unsplash.com/search/photos?client_id=J1IH4C9C0g07oMKg1e8-DLk4mvDnsluaBAqo3BnyWeI&page=1&query=office
+  params:
+    - name: client_id
+      value: J1IH4C9C0g07oMKg1e8-DLk4mvDnsluaBAqo3BnyWeI
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: query
+      value: office
+      type: query
+  auth:
+    type: apikey
+    key: client_id
+    value: "{{ACCESS_KEY}}"
+    placement: query
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+info:
+  name: Search Photo by Variable
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/search/photos?client_id={{ACCESS_KEY}}&query=dog&page=1"
+  headers:
+    - name: Authorization
+      value: "{{ACCESS_KEY}}"
+  params:
+    - name: client_id
+      value: "{{ACCESS_KEY}}"
+      type: query
+    - name: query
+      value: dog
+      type: query
+    - name: page
+      value: "1"
+      type: query
+  auth:
+    type: apikey
+    key: Client-ID
+    value: "{{ACCESS_KEY}}"
+    placement: header
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

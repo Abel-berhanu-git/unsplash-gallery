@@ -1,0 +1,6 @@
+name: developoment
+variables:
+  - name: BASE_URL
+    value: https://api.unsplash.com
+  - secret: true
+    name: ACCESS_KEY
